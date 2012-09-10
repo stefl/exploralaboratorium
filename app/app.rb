@@ -1,4 +1,4 @@
-class Bootbuckle < Padrino::Application
+class Explora < Padrino::Application
   register Padrino::Rendering
   register Padrino::Mailer
   register Padrino::Helpers
@@ -11,8 +11,8 @@ class Bootbuckle < Padrino::Application
   set :cache, Padrino::Cache::Store::Memcache.new(::Dalli::Client.new(ENV["MEMCACHE_SERVERS"] || '127.0.0.1:11211', :exception_retry_limit => 1))
 
   set :google_analytics, "XXXXXXXX"
-  set :typekit, "ABC123"
-  set :title, "My new app"
+  set :typekit, "rvb1ljc"
+  set :title, "The Exploralaboratorium"
   set :base_host, "mynewapp.com"
   set :description, "A new shiny thing, how exciting!"
 end

@@ -33,6 +33,6 @@
 # and then all delivered mail will use these settings unless otherwise specified.
 #
 
-Bootbuckle.mailer :notifier do
+Explora.mailer :notifier do
   # Message definitions here...
 end

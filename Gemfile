@@ -14,7 +14,7 @@ gem "mongo"
 gem 'mongoid'
 gem 'bson_ext', :require => "mongo"
 gem "compass", "0.12.2"
-gem "susy", "1.0.rc.4"
+gem "susy", "1.0"
 gem "sassy-buttons"
 gem "unicorn"
 gem "dalli"
@@ -27,6 +27,7 @@ gem 'padrino-sprockets', :require => 'padrino/sprockets', :git => "git://github.
 gem 'execjs'
 gem 'therubyracer', :platforms => :ruby
 gem 'jsmin'
+gem 'zurb-foundation'
 
 # Test requirements
 

@@ -1,6 +1,6 @@
 # Helper methods defined here can be accessed in any controller or view in the application
 
-Bootbuckle.helpers do
+Explora.helpers do
   # def simple_helper_method
   #  ...
   # end

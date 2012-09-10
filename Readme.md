@@ -1,11 +1,11 @@
-Bootbuckle
+Explora
 ==========
 
 A vanilla Padrino app you can clone to get going quickly with a clean setup for a web project.
 
 Fork the project, then:
     
-    git clone git://github.com/stefl/bootbuckle.git
+    git clone git://github.com/stefl/Explora.git
     bundle install
 
 If you don't have MongoDB and Memcache locally, and you're on OSX, then install Homebrew, followed by:
@@ -15,11 +15,11 @@ If you don't have MongoDB and Memcache locally, and you're on OSX, then install 
     brew install memcached
     memcached
 
-Edit config/mongoid.yml and replace "bootbuckle_development" with something else at this line:
+Edit config/mongoid.yml and replace "Explora_development" with something else at this line:
 
-    database: bootbuckle_development
+    database: Explora_development
 
-Do a global find and replace for "Bootbuckle", replacing it with your preferred application name.
+Do a global find and replace for "Explora", replacing it with your preferred application name.
 
 Then [get a 64-character hex string](https://www.grc.com/passwords.htm) and replace "change_this" at this line of config/apps.rb:
 

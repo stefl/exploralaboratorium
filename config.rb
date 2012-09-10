@@ -2,6 +2,7 @@
 # Set this to the root of your project when deployed:
 require "susy"
 require 'sassy-buttons'
+require "zurb-foundation"
 
 http_path = "/"
 cache_dir = "tmp/sass-cache" 
