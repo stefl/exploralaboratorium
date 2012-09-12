@@ -171,25 +171,21 @@ h1, h2, h3 {
   color: #ee060c;
 }
 
-#introizer {
+#introizer, #hackatibulator {
   background-image: url("/images/patterns/diamond_upholstery.png");
   background-attachment: fixed;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
-  #introizer {
+  #introizer, #hackatibulator {
     background-image: url("/images/patterns/diamond_upholstery@2x.png");
   }
 }
-#introizer #intro {
+#introizer #intro, #hackatibulator #intro {
   background-color: transparent;
 }
 
 #ideaoblator {
   background-color: #b0ddd5;
-}
-
-#hackatibulator {
-  background-color: #fed;
 }
 
 #contactualizer {
