@@ -81,6 +81,7 @@ $condensed: "proxima-nova-alt-condensed", "Helvetica Neue", "Helvetica", Helveti
     @include border-radius(1em);
     border: 1px solid #ccc;
     @include box-shadow(rgba(0,0,0,0.1) 0px 0px 8px);
+    @include trailer(1);
     padding: 1em;
     h3 {
       margin-top: 0px;
@@ -201,6 +202,10 @@ h1, h2, h3 {
       text-align: center;
     }
   }
+}
+
+p#suggest{
+  @include leader(1);
 }
 
 footer#footer {

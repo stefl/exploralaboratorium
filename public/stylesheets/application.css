@@ -81,6 +81,7 @@ html {
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
   -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+  margin-bottom: 1.5em;
   padding: 1em;
 }
 .ideas .idea h3 {
@@ -203,6 +204,10 @@ h1, h2, h3 {
 }
 #header .row h1 {
   text-align: center;
+}
+
+p#suggest {
+  margin-top: 1.5em;
 }
 
 footer#footer {
