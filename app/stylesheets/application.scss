@@ -73,6 +73,17 @@ $condensed: "proxima-nova-alt-condensed", "Helvetica Neue", "Helvetica", Helveti
   font-family: $condensed;
 }
 
+#awesomalizer {
+  @include leader(1);
+  @include trailer(1);
+  .columns {
+    text-align: center;
+    img {
+      margin: auto;
+    }
+  }
+}
+
 .ideas {
   @include leader(1);
   @include padding-leader(1);

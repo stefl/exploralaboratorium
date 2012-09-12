@@ -66,6 +66,17 @@ html {
   font-family: "proxima-nova-alt-condensed", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
+#awesomalizer {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+#awesomalizer .columns {
+  text-align: center;
+}
+#awesomalizer .columns img {
+  margin: auto;
+}
+
 .ideas {
   margin-top: 1.5em;
   padding-top: 1.5em;
