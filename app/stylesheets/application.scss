@@ -41,11 +41,14 @@ $condensed: "proxima-nova-alt-condensed", "Helvetica Neue", "Helvetica", Helveti
           font-style: normal;
         }
       }
-      blockquote {
+      h2 {
+        @include adjust-font-size-to($base-font-size * 2, $lines: 1);
+      }
+      p, li {
         @include adjust-font-size-to($base-font-size * 1.5, $lines: 1.5);
-        ol li {
-          @include adjust-font-size-to($base-font-size * 1.5, $lines: 1.5);
-        }
+      }
+      p#the_challenge {
+        font-weight: bold;
       }
       .speakerdeck {
         width: 100%;
@@ -170,7 +173,17 @@ h1, h2, h3 {
 }
 
 #hackatibulator {
-  background-color: #eee;
+  background-color: #fed;
+}
+
+#contactualizer {
+  background-color: #de1001;
+  h1 {
+    color: white;
+  }
+  p {
+    color: white;
+  }
 }
 
 #wrapper {
@@ -185,4 +198,9 @@ h1, h2, h3 {
       text-align: center;
     }
   }
+}
+
+footer#footer {
+  min-height: 12em;
+  background-color: #222;
 }

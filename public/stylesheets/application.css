@@ -37,13 +37,16 @@ html {
   color: #ee060c;
   font-style: normal;
 }
-#content section#intro blockquote {
+#content section#intro h2 {
+  font-size: 2em;
+  line-height: 0.75em;
+}
+#content section#intro p, #content section#intro li {
   font-size: 1.5em;
   line-height: 1.5em;
 }
-#content section#intro blockquote ol li {
-  font-size: 1.5em;
-  line-height: 1.5em;
+#content section#intro p#the_challenge {
+  font-weight: bold;
 }
 #content section#intro .speakerdeck {
   width: 100%;
@@ -174,7 +177,17 @@ h1, h2, h3 {
 }
 
 #hackatibulator {
-  background-color: #eee;
+  background-color: #fed;
+}
+
+#contactualizer {
+  background-color: #de1001;
+}
+#contactualizer h1 {
+  color: white;
+}
+#contactualizer p {
+  color: white;
 }
 
 #wrapper {
@@ -187,4 +200,9 @@ h1, h2, h3 {
 }
 #header .row h1 {
   text-align: center;
+}
+
+footer#footer {
+  min-height: 12em;
+  background-color: #222;
 }
