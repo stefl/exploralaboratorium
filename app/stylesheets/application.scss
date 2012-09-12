@@ -14,13 +14,18 @@ $condensed: "proxima-nova-alt-condensed", "Helvetica Neue", "Helvetica", Helveti
 #content {
   section {
     min-height: 24em;
-    @include trailer(1);
+    @include padding-trailer(1);
+    @include padding-leader(1);
     padding-left: 1em;
     padding-right: 1em;
     h1 {
       small {
         color: #222;
         text-transform: none;
+      }
+      img {
+        text-align: center;
+        max-width: 100%;
       }
     }
     &#intro {
@@ -52,15 +57,17 @@ $condensed: "proxima-nova-alt-condensed", "Helvetica Neue", "Helvetica", Helveti
       }
     }
     &#ideas {
-      background-color: #ffeeaa;
     }
     &#hacks {
-      background-color: #ddeeff;
     }
     &#products {
-      background-color: #ddeeff;
     }
   }
+}
+
+.button {
+  text-transform: uppercase;
+  font-family: $condensed;
 }
 
 .ideas {
@@ -97,18 +104,36 @@ $condensed: "proxima-nova-alt-condensed", "Helvetica Neue", "Helvetica", Helveti
 
 #hacks {
   .hackety {
-    margin: 1em;
-    @include box-sizing(border-box);
-    @include box-shadow(rgba(0,0,0,0.4) 0px 0px 8px inset);
-    text-align: center;
-    background-color: rgba(0,0,32,0.4);
-    @include border-radius(1em);
-    padding: 1em;
     h2 {
-      @include text-shadow(rgba(0,0,0,0.4) 0px 0px 8px);
-      color: rgba(255,255,255,0.2);
+      em {
+        color: #666;
+        font-style: normal;
+        text-transform: none;
+      }
+    }
+    .hack {
+      position: relative;
+      margin: 1em;
+      @include box-sizing(border-box);
+      @include box-shadow(rgba(0,0,0,0.4) 0px 0px 8px inset);
+      background-color: rgba(0,0,32,0.2);
+      @include border-radius(1em);
+      padding: 1em;
+      min-height: 16em;
       text-align: center;
-      color: white;
+      h2 {
+        @include text-shadow(rgba(0,0,0,0.4) 0px 0px 8px);
+        color: rgba(255,255,255,0.2);
+        text-align: center;
+        color: white;
+        @include leader(2);
+        @include trailer(2);
+      }
+      img {
+        position: absolute;
+        top: -10px;
+        left: -10px;
+      }
     }
   }
 }
@@ -132,6 +157,10 @@ h1, h2 {
 
 #ideaoblator {
   background-color: #b0ddd5;
+}
+
+#hackatibulator {
+  background-color: #eee;
 }
 
 #header {

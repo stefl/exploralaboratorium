@@ -9,13 +9,18 @@ html {
 
 #content section {
   min-height: 24em;
-  margin-bottom: 1.5em;
+  padding-bottom: 1.5em;
+  padding-top: 1.5em;
   padding-left: 1em;
   padding-right: 1em;
 }
 #content section h1 small {
   color: #222;
   text-transform: none;
+}
+#content section h1 img {
+  text-align: center;
+  max-width: 100%;
 }
 #content section#intro {
   background-color: transparent;
@@ -52,14 +57,10 @@ html {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-#content section#ideas {
-  background-color: #ffeeaa;
-}
-#content section#hacks {
-  background-color: #ddeeff;
-}
-#content section#products {
-  background-color: #ddeeff;
+
+.button {
+  text-transform: uppercase;
+  font-family: "proxima-nova-alt-condensed", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
 .centered {
@@ -90,7 +91,13 @@ html {
   text-transform: uppercase;
 }
 
-#hacks .hackety {
+#hacks .hackety h2 em {
+  color: #666;
+  font-style: normal;
+  text-transform: none;
+}
+#hacks .hackety .hack {
+  position: relative;
   margin: 1em;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -98,20 +105,28 @@ html {
   -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 8px inset;
   -moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 8px inset;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 8px inset;
-  text-align: center;
-  background-color: rgba(0, 0, 32, 0.4);
+  background-color: rgba(0, 0, 32, 0.2);
   -webkit-border-radius: 1em;
   -moz-border-radius: 1em;
   -ms-border-radius: 1em;
   -o-border-radius: 1em;
   border-radius: 1em;
   padding: 1em;
+  min-height: 16em;
+  text-align: center;
 }
-#hacks .hackety h2 {
+#hacks .hackety .hack h2 {
   text-shadow: rgba(0, 0, 0, 0.4) 0px 0px 8px;
   color: rgba(255, 255, 255, 0.2);
   text-align: center;
   color: white;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+#hacks .hackety .hack img {
+  position: absolute;
+  top: -10px;
+  left: -10px;
 }
 
 h1, h2 {
@@ -135,6 +150,10 @@ h1, h2 {
 
 #ideaoblator {
   background-color: #b0ddd5;
+}
+
+#hackatibulator {
+  background-color: #eee;
 }
 
 #header .row {
