@@ -222,6 +222,7 @@ p#suggest {
 }
 
 footer#footer {
+  position: relative;
   min-height: 12em;
   background-color: #222;
 }
@@ -231,4 +232,9 @@ footer#footer h2 {
 }
 footer#footer p {
   color: white;
+}
+footer#footer #big_cr_logo {
+  position: absolute;
+  top: -150px;
+  z-index: 20;
 }
