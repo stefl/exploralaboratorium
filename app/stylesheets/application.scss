@@ -184,6 +184,9 @@ h1, h2, h3 {
   p {
     color: white;
   }
+  a {
+    color: white;
+  }
 }
 
 #wrapper {
@@ -203,4 +206,10 @@ h1, h2, h3 {
 footer#footer {
   min-height: 12em;
   background-color: #222;
+  h2 {
+    @include adjust-font-size-to($base-font-size * 1.5, $lines: 1);
+  }
+  p {
+    color: white;
+  }
 }

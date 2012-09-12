@@ -189,6 +189,9 @@ h1, h2, h3 {
 #contactualizer p {
   color: white;
 }
+#contactualizer a {
+  color: white;
+}
 
 #wrapper {
   position: relative;
@@ -205,4 +208,11 @@ h1, h2, h3 {
 footer#footer {
   min-height: 12em;
   background-color: #222;
+}
+footer#footer h2 {
+  font-size: 1.5em;
+  line-height: 1em;
+}
+footer#footer p {
+  color: white;
 }
