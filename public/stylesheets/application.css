@@ -13,8 +13,9 @@ html {
   padding-left: 1em;
   padding-right: 1em;
 }
-#content section h1 {
-  text-align: center;
+#content section h1 small {
+  color: #222;
+  text-transform: none;
 }
 #content section#intro {
   background-color: transparent;
@@ -84,6 +85,10 @@ html {
     display: none;
   }
 }
+#main_nav li a {
+  font-family: "proxima-nova-alt-condensed", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
 
 #hacks .hackety {
   margin: 1em;
@@ -109,6 +114,12 @@ html {
   color: white;
 }
 
+h1, h2 {
+  font-family: "proxima-nova-alt-condensed", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #ee060c;
+}
+
 #introizer {
   background-image: url("/images/patterns/diamond_upholstery.png");
   background-attachment: fixed;
@@ -120,6 +131,10 @@ html {
 }
 #introizer #intro {
   background-color: transparent;
+}
+
+#ideaoblator {
+  background-color: #b0ddd5;
 }
 
 #header .row {

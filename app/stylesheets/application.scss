@@ -5,6 +5,7 @@
 
 $base-font-size: 16px;
 $red: #EE060C;
+$condensed: "proxima-nova-alt-condensed", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 @import "susy";
 
 @include establish-baseline;
@@ -17,7 +18,10 @@ $red: #EE060C;
     padding-left: 1em;
     padding-right: 1em;
     h1 {
-      text-align: center;
+      small {
+        color: #222;
+        text-transform: none;
+      }
     }
     &#intro {
       background-color: transparent;
@@ -84,6 +88,11 @@ $red: #EE060C;
   @include at-breakpoint(0em 12 50em) {
     display: none;
   }
+  li a {
+    font-family: $condensed;
+    text-transform: uppercase;
+
+  }
 }
 
 #hacks {
@@ -104,6 +113,12 @@ $red: #EE060C;
   }
 }
 
+h1, h2 {
+  font-family: $condensed;
+  text-transform: uppercase;
+  color: $red;
+}
+
 #introizer {
   background-image: url('/images/patterns/diamond_upholstery.png');
   background-attachment: fixed;
@@ -113,6 +128,10 @@ $red: #EE060C;
   #intro {
     background-color: transparent;
   }
+}
+
+#ideaoblator {
+  background-color: #b0ddd5;
 }
 
 #header {
