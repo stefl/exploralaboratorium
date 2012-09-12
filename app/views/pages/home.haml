@@ -43,7 +43,7 @@
     .row
       .three.columns
         %p
-          %a.button.radius{:href=>"#"} Suggest your idea
+          %a.button.radius{:href=>"#", :"data-reveal-id"=>"new_idea"} Suggest your idea
       .nine.columns
         %p
           We're inviting anyone who works at Comic Relief to suggest ideas for products we could make. If you've got an idea that you'd like to see made in the next two months, share your suggestion with us!
@@ -66,19 +66,23 @@
       .four.columns
         .idea
           %h3
-            Up the ante
+            Donate to a specific cause
           %p
             Something that Nick will explain to you when you pop in and see us at the top of the stairs.
+    - Idea.all.order_by([[:created_at, :desc]]).each_slice(3) do |row|
+      .ideas.row
+        - row.each do |idea|
+          .four.columns
+            .idea
+              %h3
+                = idea.title
+              = simple_format(h(idea.description[0..512]))
     .row
       .twelve.columns
         .centered
           .button_emphasis
             %p
-              %a.button.radius{:href=>"#"} Suggest your idea
-
-    
-
-    
+              %a.button.radius{:href=>"#", :"data-reveal-id"=>"new_idea"} Suggest your idea
 
 #hackatibulator
   %section#hacks.row
@@ -107,3 +111,45 @@
 
     %p
       %a.button.radius{:href=>"mailto:labs@comicrelief.com"} Email labs@comicrelief.com
+
+
+#new_idea.reveal-modal
+  %h2
+    Your idea for the
+    %br
+    Exploralaboratorium?
+  %p.lead
+    If you have an idea for how Comic Relief could make money 365 days a year, using digital stuff, submit it here. If its a good idea, we'll work with you to make it into a hack that you can go and test with users, and then hopefully turn into a real, working, digital product or service.
+
+  - form_for Idea.new, "/ideas" do |f|
+
+    .row
+      = label_tag :name, :caption => "Your name"
+      = f.text_field :name
+    .row.collapse
+      = label_tag :email, :caption => "Your comic relief email"
+      .six.columns.mobile-two
+        = f.text_field :email
+      .six.columns.mobile-two
+        %span.postfix
+          @comicrelief.com
+    .row
+      = label_tag :title, :caption => "The title of your idea"
+      = f.text_field :title
+
+    .row
+      = label_tag :description, :caption => "Describe your idea"
+      = f.text_area :description
+      %ul
+        %li
+          Overview of the concept
+        %li
+          How you think it might make or raise money 
+        %li
+          Who you think will use it
+    .row
+      .twelve.columns
+        %p
+          %button.button{:type=>"submit"} Suggest it!
+  
+  %a.close-reveal-modal &#215;

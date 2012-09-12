@@ -60,6 +60,15 @@
             %li#section_contact
               %a{:href=>"/#contact"} Contact
 
+      - if flash[:success]
+        #flash
+          .row
+            .six.columns.centered
+              .alert-box.success
+                %p
+                  = flash[:success]
+                %a{:href=>"#"} &times;
+
       #content
         = yield
       

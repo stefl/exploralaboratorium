@@ -249,3 +249,21 @@ footer#footer #big_cr_logo {
   top: -150px;
   z-index: 20;
 }
+@media (min-width: 0em) and (max-width: 50em) {
+  footer#footer #big_cr_logo {
+    display: none;
+  }
+}
+
+#flash {
+  position: absolute;
+  top: 9em;
+  z-index: 1000;
+}
+
+form .row {
+  margin-bottom: 1.5em;
+}
+form textarea {
+  min-height: 18em;
+}
