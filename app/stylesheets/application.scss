@@ -215,6 +215,17 @@ h1, h2, h3 {
   }
 }
 
+.button_emphasis {
+  display: inline-block;
+  margin: auto;
+  background-color: rgba(0,0,0,0.15);
+  @include border-radius(0.6em);
+  padding: 0.5em;
+  p {
+    margin-bottom: 0px;
+  }
+}
+
 p#suggest{
   @include leader(1);
 }
