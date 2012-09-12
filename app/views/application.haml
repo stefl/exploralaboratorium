@@ -47,13 +47,25 @@
         })();
 
   %body{:id=>(request.path.split("/")[1] rescue "")}
-    %header#header 
-      .row         
-        %h1#logo= Explora.title
-    #content
-      = yield
-    
-    %footer
+    #wrapper
+      %nav#main_nav
+        %ul.nav-bar
+          %li#section_intro
+            %a{:href=>"/#intro"} Exploralaboratorium
+          - if @home
+            %li#section_ideas
+              %a{:href=>"/#ideas"} Ideas
+            %li#section_hacks
+              %a{:href=>"/#hacks"} Hacks
+            %li#section_products
+              %a{:href=>"/#products"} Products
+            %li#section_contact
+              %a{:href=>"/#contact"} Contact
+
+      #content
+        = yield
+      
+      %footer
 
   %script{:src=>"/assets/libraries.js",:type=>"text/javascript"}
   %script{:src=>"/assets/app.js",:type=>"text/javascript"}

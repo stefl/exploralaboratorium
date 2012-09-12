@@ -8,22 +8,118 @@ html {
 }
 
 #content section {
-  min-height: 18em;
+  min-height: 24em;
   margin-bottom: 1.5em;
   padding-left: 1em;
   padding-right: 1em;
 }
+#content section h1 {
+  text-align: center;
+}
 #content section#intro {
-  background-color: #ddeeff;
+  background-color: transparent;
+  margin-top: 0.75em;
+  padding-bottom: 1.5em;
+}
+#content section#intro h1 {
+  font-size: 5em;
+  line-height: 0.9em;
+  font-weight: 100;
+  margin-top: 0.75em;
+}
+#content section#intro h1 em {
+  color: #ee060c;
+  font-style: normal;
+}
+#content section#intro blockquote {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+#content section#intro blockquote ol li {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+#content section#intro .speakerdeck {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#content section#intro .speakerdeck-iframe {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 #content section#ideas {
-  background-color: #ddeeff;
+  background-color: #ffeeaa;
 }
 #content section#hacks {
   background-color: #ddeeff;
 }
 #content section#products {
   background-color: #ddeeff;
+}
+
+.centered {
+  text-align: center;
+}
+
+#main_nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100000;
+  margin-top: 0px;
+}
+#main_nav .nav-bar {
+  margin-top: 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 8px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 8px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 8px;
+}
+@media (min-width: 0em) and (max-width: 50em) {
+  #main_nav {
+    display: none;
+  }
+}
+
+#hacks .hackety {
+  margin: 1em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 8px inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 8px inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 8px inset;
+  text-align: center;
+  background-color: rgba(0, 0, 32, 0.4);
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+  border-radius: 1em;
+  padding: 1em;
+}
+#hacks .hackety h2 {
+  text-shadow: rgba(0, 0, 0, 0.4) 0px 0px 8px;
+  color: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  color: white;
+}
+
+#introizer {
+  background-image: url("/images/patterns/diamond_upholstery.png");
+  background-attachment: fixed;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+  #introizer {
+    background-image: url("/images/patterns/diamond_upholstery@2x.png");
+  }
+}
+#introizer #intro {
+  background-color: transparent;
 }
 
 #header .row {

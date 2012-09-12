@@ -2,21 +2,53 @@
 @import "compass/css3";
 @import "compass/typography/vertical_rhythm";
 @import "compass/typography/links/link-colors";
+
+$base-font-size: 16px;
+$red: #EE060C;
 @import "susy";
 
 @include establish-baseline;
 
+
 #content {
   section {
-    min-height: 18em;
+    min-height: 24em;
     @include trailer(1);
     padding-left: 1em;
     padding-right: 1em;
+    h1 {
+      text-align: center;
+    }
     &#intro {
-      background-color: #ddeeff;
+      background-color: transparent;
+      @include leader(0.5);
+      @include padding-trailer(1);
+      h1 {
+        @include adjust-font-size-to($base-font-size * 5, $lines: 3);
+        font-weight: 100;
+        @include leader(0.5);
+        em {
+          color: $red;
+          font-style: normal;
+        }
+      }
+      blockquote {
+        @include adjust-font-size-to($base-font-size * 1.5, $lines: 1.5);
+        ol li {
+          @include adjust-font-size-to($base-font-size * 1.5, $lines: 1.5);
+        }
+      }
+      .speakerdeck {
+        width: 100%;
+        @include box-sizing(border-box);
+      }
+      .speakerdeck-iframe {
+        width: 100%;
+        @include box-sizing(border-box);
+      }
     }
     &#ideas {
-      background-color: #ddeeff;
+      background-color: #ffeeaa;
     }
     &#hacks {
       background-color: #ddeeff;
@@ -29,6 +61,57 @@
 
 .ideas {
   .idea {
+  }
+}
+
+.centered {
+  text-align: center;
+}
+
+#main_nav {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index: 100000;
+  margin-top: 0px;
+  .nav-bar {
+    margin-top: 0px;
+    li a {
+    }
+    @include box-shadow(rgba(0,0,0,0.25) 0px 0px 8px);
+  }
+  @include at-breakpoint(0em 12 50em) {
+    display: none;
+  }
+}
+
+#hacks {
+  .hackety {
+    margin: 1em;
+    @include box-sizing(border-box);
+    @include box-shadow(rgba(0,0,0,0.4) 0px 0px 8px inset);
+    text-align: center;
+    background-color: rgba(0,0,32,0.4);
+    @include border-radius(1em);
+    padding: 1em;
+    h2 {
+      @include text-shadow(rgba(0,0,0,0.4) 0px 0px 8px);
+      color: rgba(255,255,255,0.2);
+      text-align: center;
+      color: white;
+    }
+  }
+}
+
+#introizer {
+  background-image: url('/images/patterns/diamond_upholstery.png');
+  background-attachment: fixed;
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 2) {
+    background-image: url('/images/patterns/diamond_upholstery@2x.png');
+  }
+  #intro {
+    background-color: transparent;
   }
 }
 

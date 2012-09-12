@@ -4,10 +4,16 @@
 // It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
 // the compiled file.
 //
+//= require modernizr.foundation
 //= require jquery
-//= require jquery.customforms
-//= require jquery.orbit-1.4.0
-//= require jquery.placeholder.min
-//= require jquery.reveal
-//= require jquery.tooltips
-//= require foundation
+//= require jquery.offcanvas
+//= require jquery.placeholder
+//= require jquery.foundation.buttons
+//= require jquery.foundation.forms
+//= require jquery.foundation.navigation
+//= require jquery.foundation.orbit
+//= require jquery.foundation.reveal
+//= require jquery.foundation.tabs
+//= require jquery.foundation.tooltips
+//= require jquery.scrollto
+//= require waypoints
