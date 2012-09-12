@@ -63,6 +63,27 @@ html {
   font-family: "proxima-nova-alt-condensed", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
+.ideas {
+  margin-top: 1.5em;
+  padding-top: 1.5em;
+}
+.ideas .idea {
+  background-color: white;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+  border-radius: 1em;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+  padding: 1em;
+}
+.ideas .idea h3 {
+  margin-top: 0px;
+}
+
 .centered {
   text-align: center;
 }
@@ -129,7 +150,7 @@ html {
   left: -10px;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: "proxima-nova-alt-condensed", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: #ee060c;

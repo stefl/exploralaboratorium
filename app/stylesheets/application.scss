@@ -71,7 +71,17 @@ $condensed: "proxima-nova-alt-condensed", "Helvetica Neue", "Helvetica", Helveti
 }
 
 .ideas {
+  @include leader(1);
+  @include padding-leader(1);
   .idea {
+    background-color: white;
+    @include border-radius(1em);
+    border: 1px solid #ccc;
+    @include box-shadow(rgba(0,0,0,0.1) 0px 0px 8px);
+    padding: 1em;
+    h3 {
+      margin-top: 0px;
+    }
   }
 }
 
@@ -138,7 +148,7 @@ $condensed: "proxima-nova-alt-condensed", "Helvetica Neue", "Helvetica", Helveti
   }
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: $condensed;
   text-transform: uppercase;
   color: $red;
