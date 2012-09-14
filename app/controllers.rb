@@ -2,8 +2,8 @@ Explora.controllers  do
   get :index, :map => "/" do
     render :"pages/home"
   end
-  get :about, :map => "/about" do
-    render :"pages/about"
+  get :faq, :map => "/faq" do
+    render :"pages/faq"
   end
   post :create_idea, :map => "/ideas" do
     idea = Idea.create(params[:idea])
