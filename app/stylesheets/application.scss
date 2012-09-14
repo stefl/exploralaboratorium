@@ -47,6 +47,19 @@ $condensed: "proxima-nova-alt-condensed", "Helvetica Neue", "Helvetica", Helveti
       p, li {
         @include adjust-font-size-to($base-font-size * 1.5, $lines: 1.5);
       }
+      ol {
+        counter-reset: li;
+        li {
+          list-style: none;
+          &:before {
+            content: counter(li);
+            counter-increment: li;
+            width: 1.5em;
+            display: inline-block;
+            color: #222;
+          }
+        }
+      }
       p#the_challenge {
         font-weight: bold;
       }
