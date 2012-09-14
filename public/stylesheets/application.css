@@ -157,6 +157,7 @@ html {
   -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 8px inset;
   -moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 8px inset;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 8px inset;
+  background-color: #ddd;
   background-color: rgba(0, 0, 32, 0.2);
   -webkit-border-radius: 1em;
   -moz-border-radius: 1em;
