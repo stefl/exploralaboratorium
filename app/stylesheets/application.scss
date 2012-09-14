@@ -76,10 +76,19 @@ $condensed: "proxima-nova-alt-condensed", "Helvetica Neue", "Helvetica", Helveti
 #awesomalizer {
   @include leader(1);
   @include trailer(1);
-  .columns {
-    text-align: center;
-    img {
-      margin: auto;
+  #exploralaboratoricon {
+    padding-bottom: 30%;
+    background-image: url(/images/explora-logo-h.png);
+    background-repeat: no-repeat;
+    @include background-size(contain);
+    background-position: center center;
+    @include box-sizing(border-box);
+    @include at-breakpoint(0em 12 40em) {
+      padding-bottom: 60%;
+      background-image: url(/images/explora-logo-v.png);
+    }
+    h1 {
+      display: none;
     }
   }
 }

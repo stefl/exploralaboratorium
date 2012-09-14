@@ -70,11 +70,27 @@ html {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
-#awesomalizer .columns {
-  text-align: center;
+#awesomalizer #exploralaboratoricon {
+  padding-bottom: 30%;
+  background-image: url(/images/explora-logo-h.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-position: center center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-#awesomalizer .columns img {
-  margin: auto;
+@media (min-width: 0em) and (max-width: 40em) {
+  #awesomalizer #exploralaboratoricon {
+    padding-bottom: 60%;
+    background-image: url(/images/explora-logo-v.png);
+  }
+}
+#awesomalizer #exploralaboratoricon h1 {
+  display: none;
 }
 
 .ideas {
