@@ -82,13 +82,20 @@
           .four.columns
 
             %p
-              A
-              %a{:href=>"http://sidekickstudios.net"} Sidekick Studios
-              production
+              A 
+              %a{:href=>"http://sidekickschool.org"} Sidekick School
+              project, in collaboration with 
+              %a{:href=>"http://sidekickstudios.net"} Sidekick Studios 
+              and 
+              = succeed(".") do
+                %a{:href=>"http://www.nominettrust.org.uk"} Nominet Trust
             %p
               0207 275 8574
               %br
               %a{:href=>"mailto:labs@comicrelief.com"} labs@comicrelief.com
+            %p
+              %small
+                Comic Relief, Registered Charity 326568 (England/Wales); SC039730 (Scotland).
           .four.columns
             #big_cr_logo
               %img{:src=>"/images/crlogo.png", :alt=>"Comic Relief logo"}
