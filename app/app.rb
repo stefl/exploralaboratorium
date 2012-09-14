@@ -10,9 +10,9 @@ class Explora < Padrino::Application
 
   set :cache, Padrino::Cache::Store::Memcache.new(::Dalli::Client.new(ENV["MEMCACHE_SERVERS"] || '127.0.0.1:11211', :exception_retry_limit => 1))
 
-  set :google_analytics, "XXXXXXXX"
+  set :google_analytics, "UA-34825962-1"
   set :typekit, "rvb1ljc"
   set :title, "The Exploralaboratorium"
-  set :base_host, "mynewapp.com"
-  set :description, "A new shiny thing, how exciting!"
+  set :base_host, "exploralaboratorium.com"
+  set :description, "The Comic Relief Exploralaboratorium"
 end
