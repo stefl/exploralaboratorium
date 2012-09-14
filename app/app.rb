@@ -3,6 +3,7 @@ class Explora < Padrino::Application
   register Padrino::Mailer
   register Padrino::Helpers
   register Padrino::Sprockets
+  register Padrino::Cache
 
   sprockets :minify => (Padrino.env == :production)
 
