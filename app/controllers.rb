@@ -12,4 +12,10 @@ Explora.controllers  do
     flash[:success] = "Awesome! Thanks for your idea"
     redirect "/"
   end
+
+  get :updates, :map => "/updates" do
+    @updates = Update.all
+    render :"updates/index"
+  end
+
 end

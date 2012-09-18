@@ -1,0 +1,13 @@
+-# coding: utf-8
+
+#introbulatorizor
+  %section#intro.row
+    %h1#questionaboratory
+      The Updatolaserizer
+      %a.button.radius{:href=>"/"} « Back to the Exploralaboratorium
+
+.row
+  %section#updates.row
+    - @updates.each do |update|
+      %article.update.eight.columns
+        = update.content_html

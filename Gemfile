@@ -28,6 +28,8 @@ gem 'execjs'
 gem 'therubyracer', :platforms => :ruby
 gem 'jsmin'
 gem 'zurb-foundation'
+gem 'maruku'
+gem 'hashie'
 
 # Test requirements
 
